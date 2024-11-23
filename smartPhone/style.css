@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans MT';
+}
+* a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-color: #FFC6C6;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+header {
+    background-color: #FFEBD4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+#logo h1{
+    font-size: 2em;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#NavBar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#list .lists {
+    list-style-type: none;
+    margin: 20px;
+}
+
+#list {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+#logo img {
+    height: 50px;
+    width: 50px;
+}
+
+#searchBar {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-size: 1em;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+#searchBar img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for images */
+#bigImage {
+    z-index: -1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90%;     
+    height: 600px;
+    overflow: hidden; 
+}
+
+/* Style for images */
+#bigImage img {
+    width: 90%;
+    height: 70vh;
+    margin: 30px;
+    position: absolute;  
+    opacity: 0;
+    border-radius: 20px;
+    animation: SlideShow 15s infinite ease-in-out;
+}
+
+/* Keyframes for the fading effect */
+@keyframes SlideShow {
+    0%, 100% {            /* Start and end with opacity 0 */
+        opacity: 0;
+    }
+    16.66%, 33.33% {      /* Fade in images between 16.66% and 33.33% of the animation cycle */
+        opacity: 1;
+    }
+}
+
+/* Delay for each image */
+#bigImage img:nth-child(1) {
+    animation-delay: 0s;  /* First image starts immediately */
+}
+
+#bigImage img:nth-child(2) {
+    animation-delay: 5s;  /* Second image starts after 5 seconds */
+}
+
+#bigImage img:nth-child(3) {
+    animation-delay: 10s; /* Third image starts after 10 seconds */
+}
+
+main #information{
+    color: black;
+    position: absolute; 
+    top: 60%;           
+    left: 20%;    
+    z-index: -1000;    
+    /* opacity: 0.75; */
+}
+#information h2{
+    font-size:1.5em;
+}
+#information button{
+    font-size: 1em;
+    background-color: #FFD7E8;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FFD7E8;
+    cursor: pointer;
+}
+.products img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.mainContainer{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    text-align: center;
+
+}
+
+.products{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30%;
+}
+.products p{
+    margin: 10px;
+}
+#SecBigImage{
+    width: 88%;
+}
+#SecBigImage img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+.imageDescription{
+    position: absolute;
+    left: 10%;
+    top: 305%;
+}
+.imageDescription h1{
+    font-size: 2.5em;
+}
+.imageDescription button{
+    font-size: 1em;
+    background-color: #FFD7E8;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #FFD7E8;
+    cursor: pointer;
+}
+#mainFooter {
+    background-color: #FFEBD4;
+    color: rgb(0, 0, 0); 
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    /* border-top: 5px solid white; */
+}
+
+/* Flex container for footer content */
+#footerContent {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+/* Footer section styles */
+.footerSection {
+    flex: 1 1 200px; /* Allow sections to resize flexibly */
+    padding: 10px;
+    max-width: 300px; /* Limit the width of each section */
+}
+
+/* Section headings */
+.footerSection h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: black; /* Accent color */
+    text-transform: uppercase;
+}
+
+/* Footer links and lists */
+.footerSection ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.footerSection li {
+    margin: 5px 0; /* Add spacing between list items */
+}
+
+.footerSection p, .footerSection li {
+    font-size: 0.9em; /* Slightly smaller text for footer */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Add responsiveness
+@media (max-width: 768px) {
+    #footerContent {
+        flex-direction: column; 
+        align-items: center; 
+    }
+} */
