@@ -8,6 +8,9 @@
     text-decoration: none;
     color: black;
 }
+*::selection{
+    background-color: #facdcd;
+}
 body {
     background-color: #FFC6C6;
     /* display: flex; */
@@ -15,7 +18,7 @@ body {
 }
 header {
     background-color: #FFEBD4;
-    border-radius: 10px;
+    padding: 0 10px 0 10px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +35,7 @@ header {
 }
 
 #NavBar {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,13 +43,18 @@ header {
 
 #list .lists {
     list-style-type: none;
-    margin: 20px;
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 10px;
+}
+.lists:hover {
+    background-color: white;
 }
 
 #list {
     display: flex;
     align-items: center; 
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 #logo img {
@@ -55,7 +63,7 @@ header {
 }
 
 #searchBar {
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
 }
@@ -92,6 +100,7 @@ main {
     width: 90%;     
     height: 600px;
     overflow: hidden; 
+    
 }
 
 /* Style for images */
@@ -103,6 +112,7 @@ main {
     opacity: 0;
     border-radius: 20px;
     animation: SlideShow 15s infinite ease-in-out;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* Keyframes for the fading effect */
@@ -167,7 +177,9 @@ main #information{
     background-color: #fff;
     border-radius: 10px;
     margin: 20px;
-    width: 30%;
+    width: 29%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
 .products p{
     margin: 10px;
@@ -179,6 +191,7 @@ main #information{
     width: 100%;
     height: 80%;
     border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 .imageDescription{
     position: absolute;
