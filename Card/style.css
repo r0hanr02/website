@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  body{
+  }
+  #card{
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(255, 0, 0,0.3);
+    }
+  #user{
+    height:300px;
+    width:300px;
+    border-radius:50%;
+  };
+  #logo-1{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .logo{
+    height:30px;
+    width:30px;
+    margin:10px;
+  }

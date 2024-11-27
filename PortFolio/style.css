@@ -79,6 +79,10 @@ main{
     border: 2px solid;
     box-shadow: 5px 5px 2px 5px rgba(0, 0, 0 , 0.5);
 }
+.skills-card:hover{
+    transition: .5s;
+    transform: translateY(-10px);
+}
 .skills-card img{
     width: 200px;
     height: 200px;
@@ -112,6 +116,10 @@ main{
     margin: 10px;
     box-shadow: 5px 5px 2px 5px rgba(0, 0, 0 , 0.5);
 
+}
+.projects-card:hover{
+    transition: .5s;
+    transform: translateY(-10px);
 }
 .projects-card img{
     width: 300px;
