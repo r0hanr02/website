@@ -1,0 +1,126 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2874f0;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .product-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-image .buttons {
+            margin-top: 20px;
+        }
+
+        .product-image button {
+            background-color: #2874f0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 0 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image button:hover {
+            background-color: #0056b3;
+        }
+
+        .product-info h1 {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-info ul {
+            list-style: disc;
+            margin: 10px 0 20px 20px;
+            padding: 0;
+        }
+
+        .product-info ul li {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .rating {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .rating span {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .price-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .price-info h2 {
+            color: green;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .price-info .original-price {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 18px;
+        }
+
+        .price-info .discount {
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2874f0;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
