@@ -3,14 +3,18 @@ html {
     width: 100%;
   }
   body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #card{
+    width: 40%;
     background:white;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    box-shadow: 0px 0px 10px rgb(255, 0, 0,0.3);
+    box-shadow: 5px 10px 20px rgb(255, 0, 0,0.3);
     }
   #user{
     height:300px;
