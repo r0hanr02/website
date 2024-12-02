@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #carouselExampleDark{
+        margin-left: 2%;
+        margin-top: 1%;
+        width: 96%;
+
+    }
+    #accordionFlushExample{
+        width: 90%;
+        margin-left:5% ;
+
+    }
+    #navBar{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+</style>
+<body style="background-color: #212121;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" id="navBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GetIT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#about">About</a></li>
+                  <li><a class="dropdown-item" href="#map">Map</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#social">socials</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://images7.alphacoders.com/134/thumb-1920-1344394.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h5 class="text-light bg">Vision of the Future</h5>
+              <p class="text-light">Unlocking the power of technology through advanced digital perception and innovation.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://t4.ftcdn.net/jpg/08/66/64/45/360_F_866644529_uhQsKWBJ6CrN2tvuZK9Id3QL54LTYooS.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h5 class="text-light">Technology Meets Sustainability</h5>
+              <p class="text-light">Harnessing green innovation to power the future of eco-friendly computing.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://mrwallpaper.com/images/high/accelerating-into-the-future-with-4k-technology-tjljp0yo6l3vlbwi.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h5 class="text-light">The Fusion of Artificial and Human Intelligence</h5>
+              <p class="text-light">Bridging neural networks and digital circuits for smarter decision-making.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h2 class="text-center text-light p-3 m-2" id="about">About GetIT</h2>
+      <div class="container my-5">
+        <div class="row g-4">
+          <!-- Card 1: Company History -->
+          <div class="col-12 col-md-6 col-lg-4 shadow-sm">
+            <div class="card h-100 m-2 p-2">
+              <img src="/BootStrap/Leonardo_Phoenix_Create_a_modern_sleek_and_professional_logo_f_1.jpg" class="card-img-top" alt="Company History">
+              <div class="card-body">
+                <h5 class="card-title">Our Journey</h5>
+                <p class="card-text">GetIT was founded to bridge the gap between aspiring professionals and the tech industry. We have empowered countless students to kickstart their careers.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Mission and Vision -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 m-2 p-2">
+              <img src="https://upraise.io/wp-content/uploads/2019/12/Asset-1.png" class="card-img-top" alt="Mission and Vision">
+              <div class="card-body">
+                <h5 class="card-title">Mission & Vision</h5>
+                <p class="card-text">Our mission is to connect talented interns with companies and nurture the next generation of tech leaders. We aim to make real-world learning accessible to everyone. We aim to create a platform where students can develop practical skills, gain exposure to the corporate world, and launch successful careers.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Values -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 m-2 p-2">
+              <img src="https://drscottcolonna.com/wp-content/uploads/2022/07/Why-Determining-Core-Values-Will-Help-Grow-Your-Business.jpg" class="card-img-top" alt="Values">
+              <div class="card-body">
+                <h5 class="card-title">Our Values</h5>
+                <p class="card-text">Empowerment, Innovation, and Integrity form the foundation of GetIT. We believe in transparency and trust in all our endeavors. Continuous learning and development are crucial to success. We promote personal and professional growth for our interns, team members, and partner companies alike.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4: Meet Our Team -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 m-2 p-2">
+              <img src="https://media-bom2-2.cdn.whatsapp.net/v/t61.24694-24/399245728_1492307084899371_2679958953917566812_n.jpg?ccb=11-4&oh=01_Q5AaIE8VA5jOo9p0q-o-yGWhUOdcClpxCLcf8vKM4FdwlTdA&oe=675ACF59&_nc_sid=5e03e0&_nc_cat=110" class="card-img-top" alt="Meet Our Team">
+              <div class="card-body">
+                <h5 class="card-title">Meet Our Team</h5>
+                <p class="card-text">Our team is driven by passion to create opportunities. Led by [Name, Role], we ensure every internship is a step toward success.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5: Why Choose Us -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 m-2 p-2">
+              <img src="https://ramincrediblesolution.com/wp-content/uploads/2021/08/WHY-US01.png" class="card-img-top" alt="Why Choose Us">
+              <div class="card-body">
+                <h5 class="card-title">Why Choose Us?</h5>
+                <p class="card-text">We provide internships tailored to your skills, streamlined processes, and partnerships with leading companies.We offer valuable resources such as resume-building tips, interview coaching, and career advice to prepare students for the competitive internship market.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6: Discover More -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 m-2 p-2">
+              <img src="https://media.istockphoto.com/id/870571386/vector/search-icon.jpg?s=612x612&w=0&k=20&c=nb4VcoNvbI6qPmgXBBZi3yyQ8PFToIluSW08PR90HYc=" class="card-img-top" alt="Discover More">
+              <div class="card-body">
+                <h5 class="card-title">Discover More</h5>
+                <p class="card-text">Learn how GetIT transforms internships into meaningful experiences for students and companies alike. Explore our platform, learn about our various internship offerings, and discover how GetIT can make a difference in your professional journey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="text-center text-light p-3 m-2" id="services">Services and Offerings</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- Overview of Offerings Section -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Overview of Offerings
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                At <strong>GetIT</strong>, we specialize in connecting talented students with valuable internship opportunities across various industries. Our platform offers a wide range of services designed to help both students and companies achieve their goals. Whether you’re a student looking to kickstart your career or a company seeking fresh talent, GetIT is here to make the process seamless and effective.
+                <ul>
+                  <li><strong>Internship Placement Services</strong>: We match students with the most suitable internships based on their skills, preferences, and career goals.</li>
+                  <li><strong>Recruitment Solutions for Companies</strong>: We help companies find and hire talented interns who are ready to contribute to real-world projects.</li>
+                  <li><strong>Resume Building & Interview Preparation</strong>: We offer guidance on creating impactful resumes and preparing for interviews, helping students stand out in a competitive internship market.</li>
+                  <li><strong>Career Counseling</strong>: We provide one-on-one counseling sessions to guide students through their career path and internship search.</li>
+                  <li><strong>Employer Branding</strong>: For companies, we offer employer branding services to attract top talent by highlighting their company culture and internship opportunities.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Features and Benefits Section -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Features and Benefits
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <h5>For Students:</h5>
+                <ul>
+                  <li><strong>Personalized Matching</strong>: Students are matched with internships that best fit their skills and career aspirations, ensuring a fulfilling and relevant experience.</li>
+                  <li><strong>Global Reach</strong>: Access internships with companies from various regions and industries worldwide.</li>
+                  <li><strong>Skill Development</strong>: Students gain real-world experience, developing practical skills and expertise that make them job-ready.</li>
+                  <li><strong>Professional Networking</strong>: Interns get the opportunity to network with industry leaders, mentors, and professionals, expanding their career connections.</li>
+                  <li><strong>Comprehensive Support</strong>: GetIT offers career counseling, resume workshops, and interview preparation to ensure students are well-prepared to succeed.</li>
+                </ul>
+        
+                <h5>For Companies:</h5>
+                <ul>
+                  <li><strong>Access to Top Talent</strong>: Companies can find and hire driven, motivated students who are eager to contribute and learn.</li>
+                  <li><strong>Time-saving Process</strong>: Our streamlined platform helps companies quickly find the right candidates, saving time and effort in the hiring process.</li>
+                  <li><strong>Cost-effective</strong>: Offering internships is a cost-effective way for companies to engage with fresh talent while providing students with valuable experience.</li>
+                  <li><strong>Enhanced Employer Branding</strong>: By partnering with GetIT, companies can showcase their brand, attracting talented students who align with their company values.</li>
+                  <li><strong>Internship Success Tracking</strong>: We help companies track the success of their internship programs to ensure mutual benefit and future collaboration.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Categories or Detailed Sections -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Categories or Detailed Sections
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <h5>For Students:</h5>
+                <ul>
+                  <li><strong>Internships for Freshers</strong>: Internships designed for students who are just starting their careers.</li>
+                  <li><strong>Paid Internships</strong>: High-quality internship opportunities with compensation to support students financially.</li>
+                  <li><strong>Virtual Internships</strong>: Opportunities to work with companies remotely, allowing flexibility for students across the globe.</li>
+                  <li><strong>Summer Internships</strong>: Short-term internships designed for students during their summer break.</li>
+                </ul>
+        
+                <h5>For Companies:</h5>
+                <ul>
+                  <li><strong>Internship Program Design</strong>: We assist companies in creating internship programs that provide value to both the company and the intern.</li>
+                  <li><strong>Talent Sourcing</strong>: We help businesses find the right talent by screening and shortlisting the best candidates.</li>
+                  <li><strong>Onboarding & Support</strong>: We offer guidance on onboarding interns and ensuring a smooth internship experience.</li>
+                  <li><strong>Internship Program Evaluation</strong>: We help companies evaluate the effectiveness of their internship programs, providing data-driven insights.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Case Studies or Examples -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Case Studies or Examples
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <h5>Student Success Story:</h5>
+                <p><strong>Jane</strong>, a computer science student, joined a top tech company through a summer internship facilitated by GetIT. After completing the internship, she was offered a full-time position due to her exceptional performance. Jane credits GetIT’s personalized matching service and career counseling for preparing her for success.</p>
+        
+                <h5>Company Success Story:</h5>
+                <p><strong>XYZ Tech</strong>, a leading software development company, partnered with GetIT to source interns for their development team. Through our platform, they successfully recruited five interns, two of whom were later hired as full-time employees. The company was impressed with the quality of talent and the efficiency of our recruitment process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+      <div class="container">
+        <h2 class="text-center text-light mb-4 m-3" id="projects">Our Projects</h2>
+        
+        <!-- Project Gallery -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card m-3 p-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdOdF56rDZedvABNqM9YV2HefFBaH23ROhEQ&s" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Project XYZ</h5>
+                <p class="card-text">Seamless integration of new features like contact forms and live chat</p>
+                <a href="project1.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card m-3 p-2">
+              <img src="https://www.zauca.com/wp-content/uploads/website-redesign.jpg" class="card-img-top" alt="Website Redesign for XYZ Corp">
+              <div class="card-body">
+                <h5 class="card-title">Website Redesign for XYZ Corp</h5>
+                <p class="card-text">We worked on a complete redesign of XYZ Corp's website, enhancing the user experience, updating the UI/UX, and improving the site's responsiveness.</p>
+                <a href="project2.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card m-3 p-2">
+              <img src="https://www.braintechnosys.com/blog/wp-content/uploads/2020/08/mobile-app-developmen.jpeg" class="card-img-top" alt="Mobile App Development for ABC Inc.">
+              <div class="card-body">
+                <h5 class="card-title">Mobile App Development for ABC Inc.</h5>
+                <p class="card-text">We developed a cross-platform mobile application for ABC Inc., allowing them to reach a larger audience and improve user engagement with features such as real-time notifications and GPS tracking.</p>
+                <a href="project3.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card m-3 p-2">
+              <img src="https://media.licdn.com/dms/image/v2/D4D12AQGlOU6qSRL9zg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1683622584991?e=2147483647&v=beta&t=uF3dHQk9hLl5ZElnnUSasHjPe_RTasg-x1V4k1CJEto" class="card-img-top" alt="E-Commerce Platform for ShopEase">
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce Platform for ShopEase</h5>
+                <p class="card-text">Designed and developed a fully functional e-commerce platform for ShopEase, featuring seamless product browsing, shopping cart integration, and secure checkout process.</p>
+                <a href="project4.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card m-3 p-2">
+              <img src="https://www.scnsoft.com/crm/building-custom-crm.png" class="card-img-top" alt="Custom CRM System for Business Solutions">
+              <div class="card-body">
+                <h5 class="card-title">Custom CRM System for Business Solutions</h5>
+                <p class="card-text">Developed a custom CRM system to help Business Solutions track customer interactions, manage sales pipelines, and streamline customer support processes.</p>
+                <a href="project5.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card m-3 p-2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpi4TvsIwMRzb2HyIjtxA_YeHkO06dMu6-yw&s" class="card-img-top" alt="Social Media Campaign for Global Marketing">
+              <div class="card-body">
+                <h5 class="card-title">Social Media Campaign for Global Marketing</h5>
+                <p class="card-text">We designed and implemented a social media marketing campaign for Global Marketing to increase brand awareness and engagement across various social platforms.</p>
+                <a href="project6.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Testimonials -->
+        <h3 class="text-center my-4 text-light" >Client Testimonials</h3>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p class="mb-0">"Excellent service, would definitely work with them again!"</p>
+                    <footer class="blockquote-footer">Rohan, <cite title="Source Title">GetIT</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p class="mb-0">"A fantastic experience. Highly recommended!"</p>
+                    <footer class="blockquote-footer">Anup, <cite title="Source Title">GetIT</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="card-body">
+                  <blockquote class="blockquote">
+                    <p class="mb-0">"Impressed with the quality of work and dedication."</p>
+                    <footer class="blockquote-footer">Ankit, <cite title="Source Title">GetIT</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      <div class="container mt-5" id="Contacts">
+        <!-- Contact Section Heading -->
+        <h2 class="text-center mb-4 text-light" >Contact Us</h2>
+      
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <h4 class="text-light">Feel free to reach out</h4>
+            <p class="text-light">For any inquiries, please use the form below and our team will get back to you as soon as possible.</p>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label text-light">Name</label>
+                <input type="text" class="form-control text-light" id="name" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-light">Email</label>
+                <input type="email" class="form-control text-light" id="email" placeholder="Your Email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-light">Message</label>
+                <textarea class="form-control text-light" id="message" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary text-light">Send Message</button>
+            </form>
+          </div>
+
+          
+      
+          <!-- Contact Details -->
+          <div class="col-md-6 text-light">
+            <h4 class="text-light">Contact Details</h4>
+            <p class="text-light"><strong>Phone:</strong> +123-456-7890</p>
+            <p class="text-light"><strong>Email:</strong> contact@getit.com</p>
+            <p class="text-light"><strong>Address:</strong> <br>
+              GetIT, <br>
+              1234 Business St., Suite 567, <br>
+              City, Country 12345
+            </p>
+      
+            <!-- Google Map Integration (Embed Map Here) -->
+            <div class="embed-responsive embed-responsive-16by9" id="map">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.479131968005!2d-122.47795608463315!3d37.76781207866797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809959e22973%3A0x6cccf6ab3f7558fb!2sApple%20Park!5e0!3m2!1sen!2sus!4v1632243223651!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Social Media Links -->
+        <h4 class="text-center mt-5 text-light" id="socials">Follow Us on Social Media</h4>
+        <div class="text-center">
+          <a href="#" class="btn btn-outline-primary btn-sm m-2">Facebook</a>
+          <a href="#" class="btn btn-outline-info btn-sm m-2">Twitter</a>
+          <a href="#" class="btn btn-outline-primary btn-sm m-2">LinkedIn</a>
+          <a href="#" class="btn btn-outline-danger btn-sm m-2">Instagram</a>
+        </div>
+      </div>
+
+
+      <div class="container-fluid bg-dark text-light py-4">
+        <div class="row">
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#services" class="text-light">Services</a></li>
+              <li><a href="#about" class="text-light">About Us</a></li>
+              <li><a href="#projects" class="text-light">Projects</a></li>
+              <li><a href="#contact" class="text-light">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Social Media Icons -->
+          <div class="col-md-3 mb-3">
+            <h5>Stay Connected</h5>
+            <div>
+              <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i> Facebook</a><br>
+              <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+              <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+              <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+              <a href="#" class="text-light mx-2"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="col-md-3 mb-3">
+            <h5>Contact Info</h5>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Email:</strong> support@getit.com</p>
+            <p><strong>Address:</strong> GetIT, 1234 Business St., Suite 567, City, Country 12345</p>
+          </div>
+      
+          <!-- Newsletter Signup -->
+          <div class="col-md-3 mb-3">
+            <h5>Stay Informed</h5>
+            <p>Subscribe to our newsletter and never miss an update!</p>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="button-addon2">
+              <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Include Bootstrap JS (optional) -->
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      
+      
+      
+</body>
+
+</html>
