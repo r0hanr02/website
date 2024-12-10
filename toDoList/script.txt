@@ -1,0 +1,36 @@
+// Select elements
+const inputField = document.getElementById("input");
+const submitButton = document.getElementById("btn");
+const resultContainer = document.querySelector(".Result");
+
+submitButton.addEventListener("click", () => {
+  const content = inputField.value;
+
+  if (content === "") {
+    alert("Please enter a task!");
+    return;
+  }
+  const taskDiv = document.createElement("div");
+  taskDiv.classList.add("task");
+
+  // Create task text
+  const span = document.createElement("span");
+  span.textContent = content;
+  taskDiv.appendChild(span);
+
+  // Add "Delete" button
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete";
+  deleteButton.classList.add("delete-btn");
+  taskDiv.appendChild(deleteButton);
+
+  resultContainer.appendChild(taskDiv);
+
+  // Clear input field
+  inputField.value = "";
+
+  // Delete button functionality
+  deleteButton.addEventListener("click", () => {
+    taskDiv.remove();
+  });
+});
