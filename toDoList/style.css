@@ -40,6 +40,7 @@ input{
     color: Black;
     font-weight: bold;
     border: 2px solid white;
+    cursor: pointer;
 }
 #btn:hover{
     background-color: black;
@@ -63,6 +64,7 @@ span{
     padding: 5px;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 .result>div>button:hover{
     background-color: whitesmoke;
