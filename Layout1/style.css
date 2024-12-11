@@ -1,0 +1,93 @@
+body{
+    background-color: #212121;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    height: 98vh;
+    width: 98vw;
+    /* background-color: ; */
+    display: flex;
+    gap: 10px;
+}
+
+.right{
+    height: 100%;
+    width: 40vw;
+    background:url(https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/e2e0e62f-0064-4f86-b9d8-5a55cb7110ca/Korembi-January-2024.jpg?format=1500w);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+.top{
+    height: 33%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.top p{
+    margin: 10px;
+    text-align: justify;
+}
+.middle{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.first{
+    height: 100%;
+    width: 50%;
+    background:url(https://static.vecteezy.com/system/resources/thumbnails/024/669/489/small_2x/mountain-countryside-landscape-at-sunset-dramatic-sky-over-a-distant-valley-green-fields-and-trees-on-hill-beautiful-natural-landscapes-of-the-carpathians-generative-ai-variation-5-photo.jpeg);
+    background-size: cover;
+    border-radius: 20px;
+}
+.second{
+    height: 100%;
+    width: 50%;
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.bottom{
+    height: 33%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.content{
+    display: flex;
+    gap: 10px;
+}
+.content div{
+    width: 45%;
+    margin: 10px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    height: 15%;
+    margin: 10px;
+    background-color: rgb(172, 113, 5);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}

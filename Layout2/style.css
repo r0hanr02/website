@@ -1,0 +1,67 @@
+body{
+    background-color: #212121;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    height: 98vh;
+    width: 98vw;
+    /* background-color: ; */
+    display: flex;
+    gap: 10px;
+}
+
+.right{
+    height: 100%;
+    width: 40vw;
+    background:url(https://i.pinimg.com/736x/b8/ee/de/b8eede2f6342a9aff9be791d34653699.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+.top{
+    height: 33%;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/736x/79/16/1d/79161dfc7e3a5f04dd2771063ccf8891.jpg);
+    background-position: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.middle{
+    height: 33%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.first{
+    height: 100%;
+    width: 50%;
+    background: url(https://i.pinimg.com/736x/99/23/13/992313d5c25945dd243056e7a6dda650.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+.second{
+    height: 100%;
+    width: 50%;
+    background: url(https://i.pinimg.com/736x/c5/32/47/c5324790ee7c9a9fd734a91ecb628189.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+}
+.bottom{
+    height: 33%;
+    width: 100%;
+    background: url(https://i.pinimg.com/736x/fa/6f/6f/fa6f6f9ff7199cc236748e1a6eb350dd.jpg);
+    border-radius: 20px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;   
+}
