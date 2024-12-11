@@ -53,39 +53,59 @@ span{
     font-weight: bold;
 }
 .result{
+    width: 100%;
     display: flex;
+    
 }
-.result>div{
+.result div{
     display: flex;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(255, 255, 255);
     margin: 10px;
     box-shadow: 2px 2px 0px 0.1px black;
     padding: 10px;
     border-radius: 5px;
+    cursor:grab;
 }
-.result>div>button{
+.result div:hover{
+
+    background-color: rgb(247, 122, 122);
+    margin: 10px;
+    box-shadow: 2px 2px 0px 0.1px black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor:grab;
+}
+.result div button{
+    width: 50%;
     margin: 5px;
     padding: 5px;
     background-color: black;
     color: white;
     cursor: pointer;
 }
-.result>div>button:hover{
+.result div button:hover{
     background-color: whitesmoke;
     transition: .2s;
     color: Black;
 }
 #leftBox{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background-color:blanchedalmond;
     margin:10px;
     border:2px dotted red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
 #rightBox{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background-color:blanchedalmond;
     margin:10px;
     border:2px dotted red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
