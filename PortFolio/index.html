@@ -86,11 +86,13 @@
         </div>
         
         <div id="contacts">
-            <form action="">
+            <form action="https://api.web3forms.com/submit" method="POST">
                 <h2>Inquiry Form</h2>
-                <input type="text" placeholder="Enter Name">
-                <input type="email" placeholder="Enter Email">
-                <input type="text" placeholder="Enter Address">
+                <input type="hidden" name="access_key" value="bba4e540-a073-44b0-9800-38ce017387c5">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="email" name="email"placeholder="Enter Email">
+                <input type="text" name="address" placeholder="Enter Address">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <button type="submit">
                     Submit
                 </button>
