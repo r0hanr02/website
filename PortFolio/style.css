@@ -1,6 +1,6 @@
 body {
-    height: 100vh;
-    width: 98vw;
+    height: 100%;
+    width: 100%;
     font-family: 'Arial', sans-serif;
     background-color: #121212;  /* Dark background */
     color: #f1f1f1;  /* Light text color */
