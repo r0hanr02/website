@@ -239,5 +239,5 @@ main {
     pointer-events: none;
     z-index: 9999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    transition: transform 0.05s ease;
 }
