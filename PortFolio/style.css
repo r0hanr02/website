@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
     font-family: 'Arial', sans-serif;
     background-color: #121212;  /* Dark background */
     color: #f1f1f1;  /* Light text color */
@@ -24,6 +24,7 @@ a:hover {
 }
 
 header {
+    width:100%;
     background-color: #1e272e;  /* Darker header background */
     color: #ecf0f1;  /* Light header text */
     font-weight: bolder;
@@ -239,5 +240,5 @@ main {
     pointer-events: none;
     z-index: 9999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.05s ease;
+    transition: transform 0.05s;
 }
