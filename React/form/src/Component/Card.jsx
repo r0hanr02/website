@@ -6,7 +6,7 @@ const Card = () => {
         <h1
         className="text-4xl underline font-extrabold text-white">Contact Form</h1>
         <form 
-    className="border-4 border-black w-full m-5 p-10 flex flex-col items-start justify-start bg-slate-950 text-white md:w-1/3"
+    className="border-4 border-black w-full m-5 p-10 flex flex-col items-start justify-start bg-slate-950 text-white md:w-full xl:w-1/3"
     action="https://api.web3forms.com/submit"
     method="POST"
     >
